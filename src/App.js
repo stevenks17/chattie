@@ -15,9 +15,10 @@ function App() {
     <div className="App">
       <h1> An app for those talkative few </h1>
 
-      <input value={input} onChange={event => setInput(event.target.value)}></input>
-      <button onClick={sendMessage}>Send Message</button> 
-
+      <form>
+        <input value={input} onChange={event => setInput(event.target.value)}></input>
+        <button type='submit' onClick={sendMessage}>Send Message</button> 
+      </form>
 
       {/* messages */}
       {
